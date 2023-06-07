@@ -1,0 +1,203 @@
+{
+    "__class__":"ListaAgente",
+    "agentes":[
+      {
+        "__class__": "Docente",
+        "__atributos__": {
+          "dni": "29774885",
+          "cuil": "111111111",
+          "ape": "Gómez",
+          "nom": "Ana",
+          "sueldo": 45000,
+          "ant": 2,
+          "porcentajecargo": 5,
+          "carrera": "Matemáticas",
+          "cargo": "Profesor",
+          "catedra": "Álgebra",
+          "area": " ",
+          "tipoinv": " "
+        }
+      },
+      {
+        "__class__": "Docente",
+        "__atributos__": {
+          "dni": "51388094",
+          "cuil": "222222222",
+          "ape": "Fernández",
+          "nom": "Pedro",
+          "sueldo": 48000,
+          "ant": 4,
+          "porcentajecargo": 7,
+          "carrera": "Literatura",
+          "cargo": "Profesor",
+          "catedra": "Poesía",
+          "area": " ",
+          "tipoinv": " "
+        }
+      },
+      {
+        "__class__": "Docente",
+        "__atributos__": {
+          "dni": "83011938",
+          "cuil": "333333333",
+          "ape": "López",
+          "nom": "María",
+          "sueldo": 52000,
+          "ant": 3,
+          "porcentajecargo": 4,
+          "carrera": "Historia del Arte",
+          "cargo": "Profesor",
+          "catedra": "Arte Contemporáneo",
+          "area": " ",
+          "tipoinv": " "
+        }
+      },
+      {
+        "__class__": "PersonalApoyo",
+        "__atributos__": {
+          "dni": "61061759",
+          "cuil": "444444444",
+          "ape": "García",
+          "nom": "Juan",
+          "sueldo": 35000,
+          "ant": 1,
+          "categoria": "Administrativo",
+          "porcentajecategoria": 2
+        }
+      },
+      {
+        "__class__": "PersonalApoyo",
+        "__atributos__": {
+          "dni": "93672701",
+          "cuil": "555555555",
+          "ape": "Pérez",
+          "nom": "Lucía",
+          "sueldo": 38000,
+          "ant": 2,
+          "categoria": "Administrativo",
+          "porcentajecategoria": 3
+        }
+      },
+      {
+        "__class__": "PersonalApoyo",
+        "__atributos__": {
+          "dni": "23654321",
+          "cuil": "666666666",
+          "ape": "Martínez",
+          "nom": "Carlos",
+          "sueldo": 40000,
+          "ant": 5,
+          "categoria": "Administrativo",
+          "porcentajecategoria": 5
+        }
+      },
+      {
+        "__class__": "Investigador",
+        "__atributos__": {
+          "dni": "41780345",
+          "cuil": "777777777",
+          "ape": "Sánchez",
+          "nom": "Laura",
+          "sueldo": 55000,
+          "ant": 6,
+          "porcentajecargo": "",
+          "area": "Física",
+          "tipoinv": "Teórica",
+          "carrera": " ",
+          "cargo": " ",
+          "catedra": " "
+        }
+      },
+      {
+        "__class__": "Investigador",
+        "__atributos__": {
+          "dni": "25640372",
+          "cuil": "888888888",
+          "ape": "González",
+          "nom": "Daniel",
+          "sueldo": 60000,
+          "ant": 7,
+          "porcentajecargo": "",
+          "area": "Química",
+          "tipoinv": "Experimental",
+          "carrera": " ",
+          "cargo": " ",
+          "catedra": " "
+        }
+      },
+      {
+        "__class__": "Investigador",
+        "__atributos__": {
+          "dni": "75291342",
+          "cuil": "999999999",
+          "ape": "López",
+          "nom": "María",
+          "sueldo": 58000,
+          "ant": 4,
+          "porcentajecargo": "",
+          "area": "Biología",
+          "tipoinv": "Genética",
+          "carrera": " ",
+          "cargo": " ",
+          "catedra": " "
+        }
+      },
+      {
+        "__class__": "DocenteInvestigador",
+        "__atributos__": {
+          "dni": "61570983",
+          "cuil": "101010101",
+          "ape": "Fernández",
+          "nom": "Ana",
+          "sueldo": 60000,
+          "ant": 8,
+          "porcentajecargo": 10,
+          "carrera": "Economía",
+          "cargo": "Profesor",
+          "catedra": "Macroeconomía",
+          "area": "Economía",
+          "tipoinv": "Empírica",
+          "catincentivo": "III",
+          "impextra": 3000
+        }
+      },
+      {
+        "__class__": "DocenteInvestigador",
+        "__atributos__": {
+          "dni": "22915931",
+          "cuil": "111111110",
+          "ape": "Gómez",
+          "nom": "Pedro",
+          "sueldo": 55000,
+          "ant": 5,
+          "porcentajecargo": 7,
+          "carrera": "Sociología",
+          "cargo": "Profesor",
+          "catedra": "Teoría Sociológica",
+          "area": "Sociología",
+          "tipoinv": "Cualitativa",
+          "catincentivo": "IV",
+          "impextra": 2500
+        }
+      },
+      {
+        "__class__": "DocenteInvestigador",
+        "__atributos__": {
+          "dni": "51240092",
+          "cuil": "121212121",
+          "ape": "Rodríguez",
+          "nom": "María",
+          "sueldo": 58000,
+          "ant": 6,
+          "porcentajecargo": 8,
+          "carrera": "Psicología",
+          "cargo": "Profesor",
+          "catedra": "Psicología Social",
+          "area": "Psicología",
+          "tipoinv": "Experimental",
+          "catincentivo": "V",
+          "impextra": 3500
+        }
+      }
+    ]
+}
