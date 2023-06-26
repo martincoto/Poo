@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+ <title>Colegio San Miguel</title>
+ <link href="estilos.css" rel="stylesheet" type="text/css" />
+ 
+</head>
+<body>
+<header>
+ <h2>Colegio San Miguel</h2>
+</header>
+<section>
+
+ <!-- si va a enviar datos al servidor use etiqueta form, si solo va a mostrar datos use la etiqueta article-->
+ <h2>Registro</h2>
+<form action="http://127.0.0.1:5000/" method="POST">
+     <label for="correo">Correo electrónico:</label>
+     <input type="email" id="correo" name="correo" required><br><br>
+ 
+     <label for="contrasena">Contraseña:</label>
+     <input type="password" id="contrasena" name="contrasena" required><br><br>
+ 
+     <label for="rol">Rol:</label>
+     <select id="rol" name="rol" required>
+       <option value="">Seleccionar</option>
+       <option value="preceptor">Preceptor</option>
+       <option value="padre">Padre</option>
+     </select><br><br>
+ 
+     <input type="submit" value="Enviar">
+     {{ error }}
+    </form>
+    
+</section>
+<footer>
+    <p>Dirección y teléfono del colegio</p>
+</footer>
+</body>
+</html>

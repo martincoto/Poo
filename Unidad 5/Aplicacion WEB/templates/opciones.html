@@ -1,0 +1,10 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% if rol=='preceptor': %}
+<article>
+   <br><br>
+   <li><a href="{{ url_for('cerrar_sesión') }}">Cerrar sesión</a></li>
+   <br><br>
+</article>
+{% endif %}
+{% endblock %}
