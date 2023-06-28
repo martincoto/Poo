@@ -1,0 +1,37 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% if rol=='preceptor': %}
+<form action="{{ request.path }}" method = "post">
+  <div class="table-container">
+    <table class="tbguardar">
+      <tr>
+        <th>Apellido</th>
+        <th>Nombre</th>
+        <th>Asistencia</th>
+        <th>Justificación</th>
+        <th>Fecha</th>
+      </tr>
+      {% for estudiante in estudiantes %}
+      <tr>
+        <td>{{estudiante.apellido}}</td>
+        <td>{{estudiante.nombre}}</td>
+        <td><input type="text" maxlength="1" name="asistio[]" required></td>
+        <td><input type="text" name="justificacion[]"></td>
+        <td class="fecha">{{fecha}}</td>
+        <input type="hidden" name="estudiante_id[]" value="{{ estudiante.id }}">
+        
+
+      </tr>
+      {% endfor %}
+      
+  </table>
+</div>
+  <input class="button" type="submit" value="Guardar Asistencia">
+</form>
+  <div class="error-message"> 
+    <h3>{{ aviso }}{{ error }}</h3>
+  </div>
+  <br><br><a href = "{{ url_for('regasistencia') }}"> Volver </a><br><br>
+
+{% endif %}
+{% endblock %}

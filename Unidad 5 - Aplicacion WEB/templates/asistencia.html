@@ -1,0 +1,34 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% if rol=='preceptor': %}
+<div>
+<h2>Registrar Asistencia</h2>
+</div>
+<form action="{{request.path}}" method="POST">
+    {% if curso is not none: %}
+    <label for="curso">Curso: </label>
+    <select id="curso" name="curso" required>
+        <option value="">Seleccionar</option>
+        {% for curso in cursos %}
+        <option value={{curso.id}}>Año: {{curso.anio}} {{" - "}} Division: {{curso.division}} </option>
+        {% endfor%}
+    </select><br><br>
+    {% endif %}
+    <label for="clase">Tipo de Clase: </label>
+    <select id="clase" name="clase">
+        <option value="">Seleccionar</option>
+        <option value=1>{{"Clase de Aula"}}</option>
+        <option value=2>{{"Clase de educacion fisica"}}</option>
+    </select><br><br>
+    <label for="fecha">Fecha: </label>
+    <input type="date" id="fecha" name="fecha">
+
+    <input type="submit" value="Enviar">
+    
+</form>
+
+<div class="volver-container">
+    <a href="{{ url_for('opciones') }}" class="volver-link">Volver</a>
+ </div>
+{% endif %}
+{% endblock %}

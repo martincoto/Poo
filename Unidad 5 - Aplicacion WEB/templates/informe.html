@@ -1,0 +1,20 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% if rol=='preceptor': %}
+<form action="{{request.path}}" method="POST">
+    {% if curso is not none: %}
+    <label for="curso">Curso: </label>
+    <select id="curso" name="curso" required>
+        <option value="">Seleccionar</option>
+        {% for curso in cursos %}
+        <option value={{curso.id}}>Año: {{curso.anio}} {{" - "}} Division: {{curso.division}} </option>
+        {% endfor%}
+    </select><br><br>
+    {% endif %}
+
+  <input class="button" type="submit" value="Ver Asistencias">
+</form>
+  <br><br><a href = "{{ url_for('opciones') }}"> Volver </a><br><br>
+
+{% endif %}
+{% endblock %}

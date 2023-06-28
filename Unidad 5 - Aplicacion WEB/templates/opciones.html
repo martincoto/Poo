@@ -1,0 +1,23 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% if rol=='preceptor': %}
+<article>
+   <br><br>
+   <ul class="no-bullets">
+   <li><a href="{{ url_for('regasistencia') }}">Registrar Asistencia</a></li>
+   <li><a href="{{ url_for('informe') }}">Informe con detalles</a></li>
+   <li><a href="{{ url_for('cerrar_sesión') }}">Cerrar sesión</a></li>
+   </ul>
+
+   <br><br>
+</article>
+{% elif rol=='padre': %}
+<article>
+   <br><br>
+   <ul class="no-bullets">
+   <li><a href="{{ url_for('cerrar_sesión') }}">Cerrar sesión</a></li>
+   </ul>
+   <br><br>
+</article>
+{% endif %}
+{% endblock %}

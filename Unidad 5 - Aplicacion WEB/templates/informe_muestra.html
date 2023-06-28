@@ -1,0 +1,41 @@
+{% extends "base_template.html" %}
+{% block content %}
+{% if rol=='preceptor': %}
+<table>
+  <tr>
+      <th rowspan=2 align="center">Alumno</th>
+      <th colspan="3">Asistencia de aula</th>
+      <th colspan="3">Asistencia de Educación Física</th>
+      <th rowspan=2 align="center">Total</th>
+  </tr>
+
+  <tr>
+      
+      <td align="center">Asistencias</td>
+      <td align="center">Faltas justificadas</td>
+      <td align="center">Faltas injustificadas</td>
+
+      <td align="center">Asistencias</td>
+      <td align="center">Faltas justificadas</td>
+      <td align="center">Faltas injustificadas</td>
+      
+  </tr>
+  {% for estudiante in estudiantes %}
+  <tr>
+      <td>{{estudiante.apellido}} {{" "}} {{estudiante.nombre}}</td>
+
+      <td align="center">{{asistencias[loop.index0][0]}}</td>
+      <td align="center">{{asistencias[loop.index0][1]}}</td>
+      <td align="center">{{asistencias[loop.index0][2]}}</td>
+
+      <td align="center">{{asistencias[loop.index0][3]}}</td>
+      <td align="center">{{asistencias[loop.index0][4]}}</td>
+      <td align="center">{{asistencias[loop.index0][5]}}</td>
+
+      <td align="center">{{asistencias[loop.index0][6]}}</td>
+  </tr>
+  {% endfor %}
+</table>
+<br><br><a href = "{{ url_for('informe') }}"> Volver </a><br><br>
+{% endif %}
+{% endblock %}
